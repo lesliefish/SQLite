@@ -4,10 +4,21 @@
     <Filter Include="source">
       <UniqueIdentifier>{febab0aa-b516-4b02-bce6-103e2bb67158}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\demos">
+      <UniqueIdentifier>{3c6d3722-8985-45b8-b264-fc87630046f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\main.cpp">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="source\demos\FastUseSQLite.cpp">
+      <Filter>source\demos</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\demos\FastUseSQLite.h">
+      <Filter>source\demos</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
