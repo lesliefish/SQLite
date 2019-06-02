@@ -1,0 +1,10 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/SQLite/.vs/SQLite/v16/ipch/AutoPCH/da97dc0c77f04f67/MAIN.ipch
+/SQLite/.vs/SQLite/v16/.suo
+/SQLite/.vs/SQLite/v16/Browse.VC.db
+/SQLite/.vs/SQLite/v16/Browse.VC.opendb
+/SQLite/SQLite.vcxproj.filters
+/SQLite/SQLite.vcxproj.user
