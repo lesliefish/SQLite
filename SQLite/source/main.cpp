@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    FastUseSQLite::createTable();
+    FastUseSQLite::insertTable();
 
     return 0;
 }

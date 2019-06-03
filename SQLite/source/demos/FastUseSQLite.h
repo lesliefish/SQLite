@@ -22,4 +22,7 @@ public:
 
     // 创建表
     static void createTable();
+
+    // 插入数据
+    static void insertTable();
 };
