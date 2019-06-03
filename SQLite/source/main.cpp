@@ -3,8 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-    FastUseSQLite fastUserSqlite;
-    fastUserSqlite.connectTest();
+    FastUseSQLite::createTable();
 
     return 0;
 }
