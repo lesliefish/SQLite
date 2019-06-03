@@ -25,4 +25,7 @@ public:
 
     // 插入数据
     static void insertTable();
+
+    // 查询
+    static void selectTable();
 };

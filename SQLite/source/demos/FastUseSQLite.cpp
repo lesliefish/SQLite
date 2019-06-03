@@ -136,3 +136,46 @@ void FastUseSQLite::insertTable()
     sqlite3_close(db);
     return;
 }
+
+/*
+ * @func   FastUseSQLite::selectTable 
+ * @brief  ≤È—Ø
+ * @return void  
+ */ 
+void FastUseSQLite::selectTable()
+{
+    sqlite3* db;
+    char* zErrMsg = 0;
+    int rc;
+    std::string sql;
+    const char* data = "Callback function called";
+
+    /* Open database */
+    rc = sqlite3_open("test.db", &db);
+    if (rc) 
+    {
+        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
+        return;
+    }
+    else 
+    {
+        fprintf(stderr, "Opened database successfully\n");
+    }
+
+    /* Create SQL statement */
+    sql = "SELECT * from COMPANY";
+
+    /* Execute SQL statement */
+    rc = sqlite3_exec(db, sql.c_str(), callback, (void*)data, &zErrMsg);
+    if (rc != SQLITE_OK) 
+    {
+        fprintf(stderr, "SQL error: %s\n", zErrMsg);
+        sqlite3_free(zErrMsg);
+    }
+    else 
+    {
+        fprintf(stdout, "Operation done successfully\n");
+    }
+    sqlite3_close(db);
+    return;
+}
